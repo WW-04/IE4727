@@ -173,26 +173,6 @@ export default function Events() {
 
         {/* Action Footer */}
         <div className="mt-8 flex items-center justify-between border-t border-[var(--line)] pt-4">
-          <button
-            type="button"
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--amber)] px-5 py-2.5 text-sm font-semibold text-[#16110a] shadow-lg"
-          >
-            <span>View Movie</span>
-            <svg
-              className="h-4 w-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
         </div>
       </div>
     </article>
@@ -288,13 +268,7 @@ export default function Events() {
                   </p>
                 </div>
 
-                <button
-                  type="button"
-                  className="mt-5 inline-flex items-center gap-2 rounded-full bg-[var(--amber)] px-4 py-2 text-sm font-semibold text-[#16110a]"
-                >
-                  View Movie
-                  <span aria-hidden="true">→</span>
-                </button>
+               
               </div>
             </article>
           ))}
