@@ -1,11 +1,6 @@
 # React + Vite
 
-This project uses react and vite to replicate a cinema booking system
+This project uses react and vite to replicate a cinema booking system. There are 4 main pages "homepage" for the current screened movies, "coming soon" for the upcoming movies, "events" for special screening and "menu" for food, drinks and promotion options. 
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Backend and server 
+Connected to Express server and NoSQL MongoDB for data handling and storage. This ensures that new information is consistently being exchanged to reflect booked seats on seat display to prevent double booking. Users can get to browse through the movies they want to book and then make multiple seat and movie selection in a single transaction. Before completing the transaction, there will be multiple checks to confirm the authenticity of filled information before being stored in database. 
