@@ -19,7 +19,7 @@ const COMING_SOON_MOVIES = [
     starring: "Daisy Edgar-Jones, Esmé Creed-Miles, Caitríona Balfe, Frank Dillane, George MacKay",
     poster: "https://image.tmdb.org/t/p/original/p1vgrJqcZMppdRZ2eoHIlpdTltA.jpg",
     date: "19 October",
-    blurb: "Adapted from Jane Austen’s 1811 debut novel, Sense and Sensibility follows the Dashwood sisters Elinor, Marianne, and Margaret as they are forced to move from Sussex to Devon following the death of their father.",
+    blurb: "Adapted from Jane Austen's 1811 debut novel, Sense and Sensibility follows the Dashwood sisters Elinor, Marianne, and Margaret as they are forced to move from Sussex to Devon following the death of their father.",
   },
   {
     id: "cs3",
@@ -131,6 +131,7 @@ export default function ComingSoon() {
                 <div className="mt-8 flex items-center justify-between border-t border-[var(--line)] pt-6">
                   <button
                     type="button"
+                    onClick={()=>alert(`${movie.title} is coming soon on ${movie.date}, stay tuned!`)}
                     className="inline-flex items-center gap-2 rounded-full bg-[var(--amber)] px-5 py-2.5 text-sm font-semibold text-[#16110a] shadow-lg transition-all hover:brightness-110 active:scale-95"
                   >
                     <span>View Movie</span>
